@@ -1,26 +1,19 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import About from "./pages/about/About";
+import Chat from "./pages/Chat";
+import Login from "./pages/login/Login";
 
-const App = () => {
+// TODO: import all from pages/index
+
+const App: React.FC = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<About />} />
-      </Routes>
+    <Routes>
+      <Route path='/chat' element={<Chat />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/about' element={<About />} />
+    </Routes>
   );
-}
+};
 
 export default App;
-
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
