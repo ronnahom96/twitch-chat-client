@@ -1,5 +1,5 @@
 import React from "react";
-import "./Message.module.css";
+import styles from "./Message.module.css";
 
 interface MessageProps {
   author: string;
@@ -8,9 +8,9 @@ interface MessageProps {
 
 const Message: React.FC<MessageProps> = ({ author, text }) => {
   return (
-    <div className='message'>
-      <p className='message-author'>{author}:</p>
-      <p className='message-text'>{text}</p>
+    <div className={styles.messageContainer}>
+      <span className={styles.messageAuthor}>{author}:</span>
+      <span className={styles.messageText}>{text}</span>
     </div>
   );
 };

@@ -1,19 +1,14 @@
-.message {
+.messageContainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
 }
 
-.message-author {
+.messageAuthor {
   font-weight: bold;
   margin-right: 10px;
+  color: #444;
 }
 
-.message-text {
-  flex-grow: 1;
-  text-align: left;
+.messageText {
+  color: #333;
 }
