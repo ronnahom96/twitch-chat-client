@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 const App: React.FC = () => {
   return (
     <Routes>
+      <Route path={"/"} element={<Login />} />
       <Route path={"/chat"} element={<Chat />} />
       <Route path='/login' element={<Login />} />
       <Route path='/about' element={<About />} />

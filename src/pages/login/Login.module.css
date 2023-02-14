@@ -6,6 +6,8 @@
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 2rem;
   border-radius: 5px;
@@ -18,13 +20,13 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
 
-.inputUsername{
+.inputUsername {
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -34,7 +36,7 @@ h2 {
 }
 
 .btnSubmit {
-  background-color: #6441A5;
+  background-color: #6441a5;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -46,5 +48,5 @@ h2 {
 }
 
 .btnSubmit:hover {
-  background-color: #5E3F8F;
+  background-color: #5e3f8f;
 }
